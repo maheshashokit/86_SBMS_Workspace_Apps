@@ -1,0 +1,16 @@
+#Spring Application Configuration
+spring:
+  application:
+    name: 10_SpringBoot_Yaml_App
+
+# Employee Bean Configuration
+com:
+  ashokit:
+    employee:
+      id: 1001
+      name: Ashok
+      salary: 5000
+      location: Hyderabad
+      emailIds:
+        - mahesh.ashokit@gmail.com
+        - ashokit@gmail.com

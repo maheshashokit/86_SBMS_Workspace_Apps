@@ -1,0 +1,24 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	    <!-- Configuring the user class and enable autowire strategy -->
+	  <bean id="user" class="com.ashokit.spring.beans.User" autowire="constructor">
+	      <constructor-arg name="username" value="AIT123"/>
+	      <constructor-arg name="password" value="AIT12345"/>
+	  </bean>
+	  
+	       <!-- Configuring the Address class -->
+	  <bean id="address1" class="com.ashokit.spring.beans.Address" primary="true">
+	       <property name="streetName" value="XYZ"/>
+	       <property name="doorNo" value="1-3-4"/>
+	       <property name="city" value="Hyderabad"/>
+	  </bean>	
+	  
+	   <bean id="address2" class="com.ashokit.spring.beans.Address">
+	       <property name="streetName" value="ABC"/>
+	       <property name="doorNo" value="11-33-44"/>
+	       <property name="city" value="Chennai"/>
+	  </bean>		
+</beans>

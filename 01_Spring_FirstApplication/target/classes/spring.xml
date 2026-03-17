@@ -1,0 +1,48 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	  <!-- Configuring Java Class as Spring Bean class -->
+	 <bean id="demo" class="com.ashokit.spring.beans.Demo" scope="prototype">		
+	
+		<!-- Configuring the property value for message field -->
+		<!-- Spring Container will inject the below value using setter injection -->
+		<property name="message" value="Welcome To AshokIT"/>
+		 		 
+	 </bean>
+	 
+	   <!-- Configuring Student class as Spring Bean -->
+	 <bean id="st" class="com.ashokit.spring.beans.Student">
+	    <!--  Working with Setter Injection -->
+	    <property name="studentId" value="AIT123"/>
+	    <property name="name" value="Mahesh"/>
+	    <property name="courseName" value="SpringBoot"/>
+	    <property name="course" ref="co"/> 
+	    <property name="address" ref="add"/>
+	 </bean>
+	 
+	   <!--  Configuring Course Class as Spring Bean -->
+	 <bean id="co" class="com.ashokit.spring.beans.Course">
+	     <!-- working with Setter Injection -->
+	     <property name="courseId" value="CIT123"/>
+	     <property name="name" value="Spring Boot And Microservices"/>
+	     <property name="fee" value="5000"/>
+	 </bean>
+	 
+	  <!--  Configuring Address Class as Spring Bean -->
+	 <bean id="add" class="com.ashokit.spring.beans.Address">
+	     <!-- working with Setter Injection -->
+	     <property name="streetName" value="XYZ"/>
+	     <property name="doorNo" value="1-2-3"/>
+	     <property name="city" value="Hyderabad"/>
+	 </bean>
+	 
+	 
+	 <bean id="emp" class="com.ashokit.spring.beans.Employee">
+	      <constructor-arg name="empId" value="AIT1212"/>
+	      <constructor-arg name="name" value="Suresh"/>
+	      <constructor-arg name="designation" value="Software Engineer"/>
+	 </bean>
+		
+</beans>

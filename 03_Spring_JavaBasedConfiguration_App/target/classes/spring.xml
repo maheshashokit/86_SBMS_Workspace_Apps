@@ -1,0 +1,12 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	    <!-- Configuring the user class and enable autowire strategy -->
+	  <bean id="user" class="com.ashokit.spring.beans.User">
+	      <constructor-arg name="username" value="AIT123"/>
+	      <constructor-arg name="password" value="AIT12345"/>
+	  </bean> 
+	   
+</beans>
