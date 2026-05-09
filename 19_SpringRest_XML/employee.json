@@ -1,0 +1,24 @@
+{
+  "id" : 1122,
+  "name" : "Mahesh",
+  "designation" : "Software Engineer",
+  "workFromHome" : true,
+  "address" : [ {
+    "addressId" : 123,
+    "addressType" : "Permanent",
+    "doorNo" : "1-2-3",
+    "street" : "XYZ",
+    "city" : "Hyderabad"
+  }, {
+    "addressId" : 123,
+    "addressType" : "Temporary",
+    "doorNo" : "11-22-33",
+    "street" : "ABC",
+    "city" : "Bangalore"
+  } ],
+  "jobDetails" : {
+    "jobId" : "3434",
+    "jobBand" : "A3"
+  },
+  "dob" : "06-05-2026 07:55:05"
+}

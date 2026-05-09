@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<customer>
+    <customerId>123</customerId>
+    <customerName>Mahesh</customerName>
+    <customerLocation>Hyderabad</customerLocation>
+    <customerOrdersList>
+        <customerOrder>
+            <customerOrderNumber>345</customerOrderNumber>
+            <customerBillAmount>2500.0</customerBillAmount>
+        </customerOrder>
+        <customerOrder>
+            <customerOrderNumber>645</customerOrderNumber>
+            <customerBillAmount>3500.0</customerBillAmount>
+        </customerOrder>
+    </customerOrdersList>
+</customer>
